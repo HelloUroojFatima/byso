@@ -1,0 +1,239 @@
+* {
+  margin: auto;
+  padding: auto;
+  width: 1366px;
+}
+
+.header {
+  width: 1366px;
+  height: 173px;
+  background-color: #faeee9;
+}
+.body {
+  width: 1366px;
+}
+
+#logo {
+  width: 170px;
+  height: 175px;
+  margin-left: 29px;
+}
+#navbar {
+  width: 686px;
+  position: absolute;
+  list-style: none;
+  font-family: Akshar;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 320px;
+  height: 173px;
+  margin-top: -110px;
+}
+li {
+  float: left;
+  width: auto;
+  margin-right: 29px;
+}
+
+#addAccount {
+  list-style: none;
+  margin-top: 78px;
+  float: right;
+  width: 300px;
+  font-family: Akshar;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  float: right;
+  color: #000000;
+}
+#r_li {
+  float: left;
+  border-left: 1px solid black;
+  padding-left: 15px;
+}
+
+/* Styling the area of the slides */
+#slideshow {
+  overflow: hidden;
+  height: 430px;
+  width: 1366px;
+  margin: 0 auto;
+}
+
+/* Style each of the sides
+  with a fixed width and height */
+.slide {
+  float: left;
+  height: 430px;
+  width: 1366px;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+  /* Calculate the total width on the
+  basis of number of slides */
+  width: calc(1366px * 5);
+
+  /* Specify the animation with the
+  duration and speed */
+  animation: slide 10s ease infinite;
+}
+
+/* Define the animation
+  for the slideshow */
+@keyframes slide {
+  /* Calculate the margin-left for
+  each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+
+  40% {
+    margin-left: calc(-1366px * 1);
+  }
+
+  60% {
+    margin-left: calc(-1366px * 2);
+  }
+
+  80% {
+    margin-left: calc(-1366px * 3);
+  }
+
+  100% {
+    margin-left: calc(-1366px * 1);
+  }
+}
+#search {
+  height: 443px;
+  width: auto;
+}
+h3 {
+  font-family: Akshar;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 60px;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+}
+.searchicon {
+  width: auto;
+  height: 286px;
+}
+#icons {
+  width: 178px;
+  height: 178px;
+  display: block;
+  margin-left: 209px;
+  margin-right: auto;
+  float: left;
+  margin-top: 28px;
+}
+
+#txt {
+  width: auto;
+  height: auto;
+  float: left;
+  font-family: Andika;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+  padding-left: 250px;
+  color: #000000;
+}
+#txt1 {
+  width: auto;
+  height: auto;
+  float: left;
+  font-family: Andika;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 48px;
+  padding-left: 200px;
+  color: #000000;
+}
+
+.concerns {
+  width: 1366;
+  height: 650px;
+  background-color: #c3c3d5;
+}
+#skin_c {
+  width: 597px;
+  height: 88px;
+  font-family: akshar;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 88px;
+  /* identical to box height */
+
+  text-align: center;
+  float: left;
+  margin-top: 280px;
+  color: #faeee9;
+}
+#arrow {
+  height: 41px;
+  width: 41.986901386466734px;
+
+  border-radius: 0px;
+  float: left;
+  margin-top: 305px;
+}
+#imgconcern {
+  width: 491px;
+  height: 491px;
+  position: relative;
+  float: right;
+  margin-right: 180px;
+  margin-top: 64px;
+}
+.trending {
+  height: 600px;
+  width: auto;
+}
+#td {
+  position: absolute;
+  width: 117px;
+  height: 39px;
+  left: 600px;
+  margin-top: 106px;
+
+  font-family: Akshar;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 38px;
+
+  text-align: center;
+
+  color: #000000;
+}
+.footer {
+  height: 254px;
+  width: 1366px;
+  background: rgba(115, 83, 102, 0.81);
+  color: #ffffff;
+  font-family: andika;
+}
+.left-ft {
+  float: left;
+  margin-left: 80px;
+  margin-top: 35px;
+}
+.right-ft {
+  float: right;
+}
+ul {
+  list-style: none;
+}
