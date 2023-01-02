@@ -1,8 +1,10 @@
 <?php
-    
+    session_start();
+    $email=$_POST['email'];
+  
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
         include ('DatabaseConnection.php');
-    $email=$_POST['email'];
+    
     $password=$_POST['password'];
     $check="SELECT password 
             FROM customer 
@@ -13,11 +15,12 @@
   
        
         if($result['password']==$password){
-            header("location:html/index.html");
+            $_SESSION['email']=$email;
+            header("location:html/index.php");
            
         }
         else{
-            echo'User not found';
+            echo"User Not Found";
         }
     }
 ?>

@@ -1,0 +1,123 @@
+* {
+    margin: auto;
+    padding: auto;
+    
+  }
+  .header {
+    width: 1366px;
+    height: 173px;
+    background-color: #faeee9;
+  }
+  .heading {
+    width: 1366px;
+    height: 20px;
+    background-color: rgba(39, 30, 35, 0.81);
+    color: aliceblue;
+   
+    text-align: center;
+  }
+  #logo {
+    width: 170px;
+    height: 175px;
+    margin-left: 29px;
+  }
+  table{
+    width: 1200px;
+   
+   margin: 30px 100px 30px 30px;
+  }
+
+  td{
+ 
+    width: 850px;
+    
+  }
+  #pro {
+    width: 400px;
+    height: 450px;
+    position: relative;
+    margin-top: 40px;
+  }
+  input{
+width: 200px;
+height: 40px;
+font-family: Andika;
+margin-left: 30px;
+  }
+  .footer {
+    height: 254px;
+    width: 1366px;
+    background: rgba(115, 83, 102, 0.81);
+    color: #ffffff;
+    font-family: andika;
+  }
+  #info {
+    color: #ffffff;
+    font-family: andika;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  }
+  #insta {
+    margin-left: 30px;
+    width: 19px;
+    height: 19px;
+  }
+  #addAccount {
+    list-style: none;
+    margin-top: 78px;
+    float: right;
+    width: 300px;
+    font-family: Akshar;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    float: right;
+    color: #000000;
+  }
+  li {
+    float: left;
+    width: auto;
+    margin-right: 29px;
+  }
+  #navbar {
+    width: 686px;
+    position: absolute;
+    list-style: none;
+    font-family: Akshar;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 320px;
+    height: 173px;
+    margin-top: -110px;
+  }
+  #r_li {
+    float: left;
+    border-left: 1px solid black;
+    padding-left: 15px;
+  }
+  h4 {
+    margin-left: 30px;
+    width: 300px;
+    font-family: andika;
+    padding-top: 50px;
+    height: 60px;
+    font-weight: lighter;
+  }
+  ul {
+    list-style: none;
+    float: none;
+  }
+  a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: none;
+}

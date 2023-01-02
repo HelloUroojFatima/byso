@@ -5,30 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>signin</title>
+    <title>Sign In</title>
   </head>
   <body>
     <div class="container2">
-      <h1>Sign in</h1>
-      <form method="POST" action="../SignIn.php" enctype="multipart/form-data">
-        <lable>Email Address</lable>
+      <div class="header">
+        <a href="index.php"><img id="logo" src="../img/logo.png" /></a>
+
+        <ul id="navbar">
+          <a href="q1.html"><li>Skin Concern</li></a>
+          <a href="#"><li>Discover</li></a>
+
+          <a href="categories.php"><li>Set</li></a>
+          <a href="#"> <li>Men</li></a>
+          <a href="#"><li>Women</li></a>
+        </ul>
+
+        <ul id="addAccount">
+          <a href="JoinUs.html"><li>Join Us</li></a>
+          <a href="SignIn.html"><li id="r_li">Sign In</li></a>
+        </ul>
+      </div>
+      <h1 id="fHeading">Sign In</h1>
+      <form id="form1" method="POST" action="../SignIn.php" enctype="multipart/form-data">
+        <lable id="f1label">Email Address</lable>
         <br />
         <input
+          id="f1Input"
           type="Email"
           name="email"
           placeholder="enter your email"
           required
-        />
-        <lable>password</lable>
+        /><br />
+
+        <lable id="f1label">password</lable>
         <br />
         <input
+          id="f1Input"
           type="password"
           name="password"
           placeholder="enter your password"
           required
         />
-        <input type="submit" value="signin" />
-      </form>
+        <input id="f1btn" type="submit" value="signin" />
+      </form >
+    </div>
+    <div class="footer">
+      <h4>where you can find us</h4>
+      <a href="#"><p id="info">byso.instagram.com</p></a>
+      <a href="#"> <p id="info">byso.facebook.com</p></a>
+      <img id="insta" src="../img/insta.png" />
     </div>
   </body>
 </html>
