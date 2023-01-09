@@ -8,82 +8,99 @@
     <title>signup</title>
   </head>
   <body>
-    <div class="container2">
-      <h1>JOIN US</h1>
-      <form method="POST" action="../JoinUs.php" enctype="multipart/form-data">
-        <lable>Please Enter Your Name</lable>
-        <br />
-        <input  type="text" name="name" placeholder="Enter Full Name"
-        required><br /><br />
+    <div class="header">
+      <a href="index.php"><img id="logo" src="../img/logo.png" /></a>
 
-        <label>Email Address</label>
+      <ul id="navbar">
+        <a href="q1.html"><li>Skin Concern</li></a>
+        <a href="#"><li>Discover</li></a>
+
+        <a href="categories.php"><li>Set</li></a>
+        <a href="#"> <li>Men</li></a>
+        <a href="#"><li>Women</li></a>
+      </ul>
+
+      <ul id="addAccount">
+        <a href="JoinUs.html"><li>Join Us</li></a>
+        <a href="SignIn.html"><li id="r_li">Sign In</li></a>
+      </ul>
+    </div>
+    <div class="container3">
+      <h1 id="f2heading">Join Us</h1>
+      <form id="form2" method="POST" action="../JoinUs.php" enctype="multipart/form-data">
+        <lable id="f2label">Please Enter Your Name</lable>
         <br />
         <input
+          id="f1Input"
+          type="text"
+          name="name"
+          placeholder="Enter Full Name"
+          s
+          required
+        /><br /><br />
+
+        <label id="f2label">Email Address</label>
+        <br />
+        <input
+          id="f1Input"
           type="Email"
           name="email"
           placeholder="Enter Full Email"
           required
         /><br /><br />
-        <lable1>Mobile</lable1>
+        <lable1 id="f2label">Mobile</lable1><br />
         <input
+          id="f1Input"
           type="number"
           name="mobile"
           placeholder="Enter Mobile Number"
           required
         /><br /><br />
 
-        <lable>password</lable>
+        <lable id="f2label">password</lable>
         <br />
         <input
+          id="f1Input"
           type="password"
           name="password"
           placeholder="enter your password"
           required
         /><br /><br />
-        <label>Gender</label>
-        Male<input 
-        type="radio"
-        name="gender"
-        value="male">
-
-        Female<input 
-        type="radio"
-        name="gender"
-        value="female">
-
-        Unisex<input 
-        type="radio"
-        name="gender"
-        value="both">
-        <label>Address </label>
+        <label id="f2label">Address </label><br />
 
         <input
-          id="address"
+          id="f1Input"
           name="address"
           type="text"
           placeholder="address "
         /><br /><br />
 
-        <label>City </label>
+        <label id="f2label">City </label><br />
 
         <input
-          id="city"
+          id="f1Input"
           name="city"
           type="text"
           placeholder="city"
         /><br /><br />
 
-        <label>Zip / Postal Code</label>
+        <label id="f2label">Zip / Postal Code</label><br />
 
         <input
-          id="postal-code"
+          id="f1Input"
           name="postalCode"
           type="text"
           placeholder="zip or postal code"
         /><br /><br />
 
-        <input type="submit" value="sign up" />
+        <input id="f2btn" type="submit" value="sign up" />
       </form>
+    </div>
+    <div class="footer">
+      <h4>where you can find us</h4>
+      <a href="#"><p id="info">byso.instagram.com</p></a>
+      <a href="#"> <p id="info">byso.facebook.com</p></a>
+      <img id="insta" src="../img/insta.png" />
     </div>
   </body>
 </html>

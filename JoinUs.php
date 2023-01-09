@@ -1,5 +1,6 @@
 <?php
-    
+    session_start();
+   
     if ($_SERVER["REQUEST_METHOD"] == "POST"){
         include ('DatabaseConnection.php');
     $email=$_POST['email'];
@@ -19,22 +20,22 @@
         $password=$_POST['password'];
         $postalCode=$_POST['postalCode'];
         $address=$_POST['address'];
-        $gender=$_POST['gender'];
         $city=$_POST['city'];
 
-        $result="INSERT INTO customer(name,email,mobile,password,postalCode,address,gender,city)
-                VALUES ('$name','$email','$mobile','$password','$postalCode','$address','$gender','$city')";
+        $result="INSERT INTO customer(name,email,mobile,password,postalCode,address,city)
+                VALUES ('$name','$email','$mobile','$password','$postalCode','$address','$city')";
 
 
         $save=mysqli_query($db_connection,$result);
 
         if($save){
-            //header("location:page2.html");
-            echo("Data saved in Database")	;
+            $_SESSION['email']= $email;
+            header("location:html/index.php");
         }
         else{
             echo'fail insertion'.mysqli_error($db_connection);
         }
     }}
+
 ?>
 
